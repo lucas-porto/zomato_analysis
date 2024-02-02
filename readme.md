@@ -16,8 +16,6 @@ This project aimed to enhance my abilities in Streamlit development. I also refr
 
 The main objective was to create a interative opensource dashboard.
 
-
-I like to structure it as below - 
 ## Codes and Resources Used
 In this section I give user the necessary information about the software requirements.
 - **Editor Used:**  I created this dashboard using VSCode.
@@ -30,7 +28,6 @@ In this section I give user the necessary information about the software require
 - **Data Visualization:** `folium, plotly` 
 
 
-
 # Data
 
 ## Source Data
@@ -38,8 +35,6 @@ This data is avaiable in [kaggle](https://www.kaggle.com/datasets/shrutimehta/zo
 
 
 # Code structure
-
-
 ```bash
 ├── data
 │   ├── processed
@@ -73,19 +68,8 @@ This data is avaiable in [kaggle](https://www.kaggle.com/datasets/shrutimehta/zo
 ```
 
 # Results and evaluation
-Provide an overview of the results of your project, including any relevant metrics and graphs. Include explanations of any evaluation methodologies and how they were used to assess the quality of the model. You can also make it appealing by including any pictures of your analysis or visualizations.
-
-# Future work
-Outline potential future work that can be done to extend the project or improve its functionality. This will help others understand the scope of your project and identify areas where they can contribute.
-
-# Acknowledgments/References
-Acknowledge any contributors, data sources, or other relevant parties who have contributed to the project. This is an excellent way to show your appreciation for those who have helped you along the way.
-
-For instance, I am referencing the image that I used for my readme header - 
-- Image by [rashadashurov](https://www.vectorstock.com/royalty-free-vector/data-science-cartoon-template-with-flat-elements-vector-27984292)
+This was a good experience for train creating dashboards in streamlit.
 
 # License
-Specify the license under which your code is released. Moreover, provide the licenses associated with the dataset you are using. This is important for others to know if they want to use or contribute to your project. 
-
-For this github repository, the License used is [MIT License](https://opensource.org/license/mit/).
+For this github repository, the License used is [CC0: Public Domain](https://creativecommons.org/publicdomain/zero/1.0/).
 
