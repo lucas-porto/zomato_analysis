@@ -29,8 +29,9 @@ def plot_bar_graph(dataset, x_col,  y_col, type_of_agg, title, x_label, y_label)
     )
 
   elif type_of_agg == 'mean':
+    dataset = dataset.loc[:, [y_col, x_col]]
     grouped_df = (
-        dataset.loc[:, [y_col, x_col]]
+        dataset
         .groupby(x_col)
         .mean()
         .sort_values(y_col, ascending=False)
