@@ -32,7 +32,7 @@ def main():
     fig = cdt.countries_cities(countries)
     st.plotly_chart(fig, use_container_width=True)
 
-    votes_, plate_price_ = st.columns(2)
+    plate_price_, votes_ = st.columns(2)
     
     with plate_price_:
         fig = cdt.countries_average_plate(countries)
