@@ -32,6 +32,7 @@ def plot_bar_graph(dataset, x_col,  y_col, type_of_agg, title, x_label, y_label)
     grouped_df = (
         dataset
         .groupby(x_col)
+        [[y_col]]
         .mean()
         .sort_values(y_col, ascending=False)
         .reset_index()
