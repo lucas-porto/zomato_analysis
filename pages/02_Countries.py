@@ -32,17 +32,25 @@ def main():
     fig = cdt.countries_cities(countries)
     st.plotly_chart(fig, use_container_width=True)
 
-    plate_price_, votes_ = st.columns(2)
+    fig = cdt.countires_registered_reviews(countries)
+    st.plotly_chart(fig, use_container_width=True)
+
+    fig = cdt.countries_mean_votes(countries)
+    st.plotly_chart(fig, use_container_width=True)
+
+
+#    plate_price_, votes_ = st.columns(2)
     
-    with plate_price_:
-        fig = cdt.countires_registered_reviews(countries)
+#    with plate_price_:
+#        fig = cdt.countires_registered_reviews(countries)
 
-        st.plotly_chart(fig, use_container_width=True)
+#        st.plotly_chart(fig, use_container_width=True)
 
-    with votes_:
-        fig = cdt.countries_mean_votes(countries)
+#    with votes_:
+#        fig = cdt.countries_mean_votes(countries)
 
-        st.plotly_chart(fig, use_container_width=True)
+#        st.plotly_chart(fig, use_container_width=True)
+    
     return None
 
 if __name__ == '__main__':
