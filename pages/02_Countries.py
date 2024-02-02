@@ -35,7 +35,7 @@ def main():
     plate_price_, votes_ = st.columns(2)
     
     with plate_price_:
-        fig = cdt.countries_average_plate(countries)
+        fig = cdt.countires_registered_reviews(countries)
 
         st.plotly_chart(fig, use_container_width=True)
 
