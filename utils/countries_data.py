@@ -28,7 +28,7 @@ def plot_bar_graph(dataset, x_col,  y_col, type_of_agg, title, x_label, y_label)
         .reset_index()
     )
 
-  elif type_of_agg == 'mean':
+  elif type_of_agg == 'm':
     grouped_df = (
         dataset
         .groupby(x_col)
@@ -52,7 +52,7 @@ def plot_bar_graph(dataset, x_col,  y_col, type_of_agg, title, x_label, y_label)
         },
     )
 
-  elif type_of_agg == 'mean':
+  elif type_of_agg == 'm':
 
     fig = px.bar(
         grouped_df,
@@ -101,7 +101,7 @@ def countries_mean_votes(countries):
     df = read_processed_data()
     df_filter = df.loc[df['country'].isin(countries), ['aggregate_rating', 'country']]
 
-    fig = plot_bar_graph(dataset=df_filter, x_col='country',  y_col='aggregate_rating', type_of_agg='mean',
+    fig = plot_bar_graph(dataset=df_filter, x_col='country',  y_col='aggregate_rating', type_of_agg='m',
                         title='Which is the Average Rating by Country',
                         x_label='Country', y_label='Average Mean Rating')
 
@@ -111,7 +111,7 @@ def countries_average_plate(countries):
     df = read_processed_data()
     df_filter = df.loc[df['country'].isin(countries), ['average_cost_for_two', 'country']]
 
-    fig = plot_bar_graph(dataset=df_filter, x_col='country',  y_col='average_cost_for_two', type_of_agg='mean',
+    fig = plot_bar_graph(dataset=df_filter, x_col='country',  y_col='average_cost_for_two', type_of_agg='m',
                title='Average Cost for Two by Country',
                x_label='Country', y_label='Average Cost for Two')
 
@@ -122,7 +122,7 @@ def countires_registered_reviews(countries):
     df = read_processed_data()
     df_filter = df.loc[df['country'].isin(countries), ['votes', 'country']]
 
-    fig = plot_bar_graph(dataset=df_filter, x_col='country',  y_col='votes', type_of_agg='mean',
+    fig = plot_bar_graph(dataset=df_filter, x_col='country',  y_col='votes', type_of_agg='m',
                title='Mean Registered Reviews by Country',
                x_label='Country', y_label='Mean Registered Reviews')
 
