@@ -33,16 +33,16 @@ def main():
     st.plotly_chart(fig, use_container_width=True)
 
     votes_, plate_price_ = st.columns(2)
-    with votes_:
-        fig = cdt.countries_mean_votes(countries)
-
-        st.plotly_chart(fig, use_container_width=True)
-
+    
     with plate_price_:
         fig = cdt.countries_average_plate(countries)
 
         st.plotly_chart(fig, use_container_width=True)
 
+    with votes_:
+        fig = cdt.countries_mean_votes(countries)
+
+        st.plotly_chart(fig, use_container_width=True)
     return None
 
 if __name__ == '__main__':
